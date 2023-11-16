@@ -51,7 +51,9 @@ onMounted(async () => await store.fetchCards());
     margin: 40px;
     align-self: flex-end;
     transition: 0.1s ease-in-out;
-
+    @media (max-width: 768px) {
+      align-self: center;
+    }
     &:active {
       box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
     }
